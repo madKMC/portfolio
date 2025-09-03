@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const colorMap = {
 	React: 'bg-blue-100 text-blue-800',
@@ -47,6 +49,7 @@ const ProjectCard = ({
 					rel='noopener noreferrer'
 					className='bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition'
 				>
+					<FaExternalLinkAlt className='inline mr-1' />
 					Website
 				</a>
 				<a
@@ -55,6 +58,7 @@ const ProjectCard = ({
 					rel='noopener noreferrer'
 					className='bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900 transition'
 				>
+					<FaGithub className='inline mr-1' />
 					GitHub
 				</a>
 			</div>
