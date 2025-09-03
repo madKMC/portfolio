@@ -1,5 +1,11 @@
 import React from 'react';
 
+const colorMap = {
+	React: 'bg-blue-100 text-blue-800',
+	JavaScript: 'bg-yellow-100 text-yellow-800',
+	// add more languages as needed
+};
+
 const ProjectCard = ({
 	image,
 	title,
@@ -8,7 +14,7 @@ const ProjectCard = ({
 	websiteUrl,
 	githubUrl,
 }) => (
-	<div className='flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'>
+	<div className='flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl md:min-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'>
 		<img
 			src={image}
 			alt={title}
@@ -22,14 +28,17 @@ const ProjectCard = ({
 				{description}
 			</p>
 			<div className='flex flex-wrap gap-2 mb-4'>
-				{badges.map((badge, idx) => (
-					<span
-						key={idx}
-						className='bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded'
-					>
-						{badge}
-					</span>
-				))}
+				{badges.map((badge, idx) => {
+					const classes = colorMap[badge] || 'bg-gray-100 text-gray-800';
+					return (
+						<span
+							key={idx}
+							className={`${classes} text-xs font-medium px-2 py-1 rounded`}
+						>
+							{badge}
+						</span>
+					);
+				})}
 			</div>
 			<div className='flex gap-3 mt-auto'>
 				<a
