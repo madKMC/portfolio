@@ -12,7 +12,7 @@ function App() {
 			<ProjectCard
 				image={comingSoonImage}
 				title='Coming Soon'
-				description='This project is coming soon. Well so we believe aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa asdasd a'
+				description='This project is coming soon. 04/09/2025'
 				badges={['React', 'JavaScript']}
 				websiteUrl='https://example.com'
 				githubUrl='https://github.com'
