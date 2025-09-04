@@ -11,11 +11,11 @@ function App() {
 			<br />
 			<ProjectCard
 				image={comingSoonImage}
-				title='Coming Soon'
-				description='This project is coming soon. 04/09/2025'
-				badges={['React', 'JavaScript']}
-				websiteUrl='https://example.com'
-				githubUrl='https://github.com'
+				title='Pomodoro Timer'
+				description='This is a pomodoro timer, built during the bolt.new hackathon. It features a sleek design and customizable timer settings to help you stay focused and productive.'
+				badges={['React', 'JavaScript', 'bolt.new', 'Tailwind']}
+				websiteUrl='https://pomodoro.cairnsforge.co.za'
+				githubUrl='https://github.com/madKMC/PomodoroTimer'
 			/>
 			<Divider />
 			<ProjectCard
