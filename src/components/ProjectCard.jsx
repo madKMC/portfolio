@@ -11,6 +11,7 @@ const colorMap = {
 	Express: 'bg-gray-100 text-gray-800',
 	Vite: 'bg-pink-100 text-pink-800',
 	GoogleAPI: 'bg-red-100 text-red-800',
+	Bootstrap: 'bg-purple-100 text-purple-800',
 };
 
 const ProjectCard = ({
