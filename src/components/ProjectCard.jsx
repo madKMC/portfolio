@@ -21,7 +21,7 @@ const ProjectCard = ({
 	websiteUrl,
 	githubUrl,
 }) => (
-	<div className='flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:min-w-xl md:max-w-xl lg:min-w-6xl lg:max-w-6xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'>
+	<div className='flex flex-col items-center mt-5 bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:min-w-xl md:max-w-xl lg:min-w-6xl lg:max-w-6xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'>
 		<img
 			src={image}
 			alt={title}
