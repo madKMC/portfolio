@@ -3,14 +3,14 @@ import { FaGithub } from 'react-icons/fa';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const colorMap = {
-	'React': 'bg-blue-100 text-blue-800',
-	'JavaScript': 'bg-yellow-100 text-yellow-800',
+	React: 'bg-blue-100 text-blue-800',
+	JavaScript: 'bg-yellow-100 text-yellow-800',
 	'bolt.new': 'bg-purple-100 text-purple-800',
-	'Tailwind': 'bg-teal-100 text-teal-800',
-	'Node': 'bg-green-100 text-green-800',
-	'Express': 'bg-gray-100 text-gray-800',
-
-	// add more languages as needed
+	Tailwind: 'bg-teal-100 text-teal-800',
+	Node: 'bg-green-100 text-green-800',
+	Express: 'bg-gray-100 text-gray-800',
+	Vite: 'bg-pink-100 text-pink-800',
+	GoogleAPI: 'bg-red-100 text-red-800',
 };
 
 const ProjectCard = ({
